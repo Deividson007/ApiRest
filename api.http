@@ -1,11 +1,18 @@
 POST http://localhost:3000/auth/register HTTP/1.1
 content-type: application/json
+
 {
-    "name": "Morpheus",
-    "email": "morpheus.thementor@dvd.com.br",
+    "name": "Dwayne Johnson",
+    "email": "dwayne.johnson@dvd.com.br",
     "password": "123456"
 }
 
 ###
 
-get 
+POST http://localhost:3000/auth/authenticate HTTP/1.1
+content-type: application/json
+
+{
+    "email": "dwayne.johnson@dvd.com.br",
+    "password": "123456"
+}
