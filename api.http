@@ -2,8 +2,8 @@ POST http://localhost:3000/auth/register HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Dwayne Johnson",
-    "email": "dwayne.johnson@dvd.com.br",
+    "name": "Marty McFly",
+    "email": "marty.mcfly@dvd.com.br",
     "password": "123456"
 }
 
@@ -16,3 +16,8 @@ content-type: application/json
     "email": "dwayne.johnson@dvd.com.br",
     "password": "123456"
 }
+
+###
+
+GET http://localhost:3000/projects HTTP/1.1
+Autorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkYTc3OWEwYzI5NzU2NDEyY2FjYTVkYyIsImlhdCI6MTU3MTMzNTU4NiwiZXhwIjoxNTcxNDIxOTg2fQ.23J9CVGKIJGGXYeiH_3bxnDWpq8D9QIJAUeWnjeJv3k
