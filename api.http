@@ -1,23 +1,24 @@
+### REGISTRO ###
 POST http://localhost:3000/auth/register HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Marty McFly",
-    "email": "marty.mcfly@dvd.com.br",
+    "name": "Deividson Santos",
+    "email": "deividson.santos@dvd.com.br",
     "password": "123456"
 }
 
-###
+### AUTENTICAÇÂO ###
 
 POST http://localhost:3000/auth/authenticate HTTP/1.1
 content-type: application/json
 
 {
-    "email": "dwayne.johnson@dvd.com.br",
+    "email": "deividson.santos@dvd.com.br",
     "password": "123456"
 }
 
 ###
 
 GET http://localhost:3000/projects HTTP/1.1
-Autorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkYTc3OWEwYzI5NzU2NDEyY2FjYTVkYyIsImlhdCI6MTU3MTMzNTU4NiwiZXhwIjoxNTcxNDIxOTg2fQ.23J9CVGKIJGGXYeiH_3bxnDWpq8D9QIJAUeWnjeJv3k
+Autorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkYThhZjg3MDI4MGQ2NDg0MDk5OTI1NiIsImlhdCI6MTU3MTMzNjA3MSwiZXhwIjoxNTcxNDIyNDcxfQ.SH8yutIsAGKSyPipFwb8k4Suk2JG4Ed5LmZmC0qov8g
